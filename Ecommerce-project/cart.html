@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is an ecommerce project for menonul islam"
+    />
+    <title>Ecomerce Project</title>
+
+    <!-- font-awsome cdn  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <h1>Memonul Express</h1> -->
+
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+
+    <!-- nav list starts here  -->
+
+    <nav id="menu" class="hidden">
+      <ul class="nav__upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link"
+            ><img src="image.png.png" class="profile__img" alt="profile"
+          /></a>
+        </li>
+        <li class="nav__list">
+          <a href="product.html" class="nav__link">Product</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <!-- <li class="nav__list"> -->
+        <!-- <a href="/index.html" class="nav__link">Logout</a> -->
+        <!-- </li> -->
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <!-- <li class="nav__list">
+          <a href="card.html" class="nav__link">Card</a>
+        </li> -->
+      </ul>
+
+      <ul class="nav__lower">
+        <li class="nav__list">
+          <a href="/index.html" class="nav__link nav__brand"
+            >Memonnul Express</a
+          >
+        </li>
+        <li class="nav__list">
+          <a href="/cart.html" class="nav__link"
+            ><span><i class="fa-solid fa-cart-shopping"></i></span>Carts 2
+            products -$125.50</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- nav list ends here  -->
+
+    <main>
+      <div class="cart flex__center">
+        <div class="cart__items">
+          <div class="cart-items-heading card">
+            <h2>Shoppiing cart[2 items]</h2>
+            <div class="cart-items-action">
+              <label for="select">
+                <input type="checkbox" name="select" id="selct" />
+                Select all items
+              </label>
+              <button class="btn cart__btn btn1">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <button class="btn cart__btn btn1">Shop More Button</button>
+            </div>
+          </div>
+
+          <div class="cart__item card flex-space-around">
+            <input type="checkbox" name="cart" id="cart" />
+            <img
+              src="background-img7.jpg"
+              class="cart-item-img"
+              alt="images7"
+            />
+            <div class="cart__description">
+              <h3 class="product__name">Sony v-4 Headphone</h3>
+              <h4 class="product__price">price:$225.90</h4>
+              <p class="cart-item-shipping">Free Shippinge</p>
+            </div>
+            <div class="cart-item-actions">
+              <buttion class="btn btn1">
+                <i class="fa-solid fa-trash"></i>
+              </buttion>
+              <buttion class="btn btn1">
+                <i class="fa-solid fa-plus"></i>
+              </buttion>
+              <span>3</span>
+              <buttion class="btn btn1">
+                <i class="fa-solid fa-minus"></i>
+              </buttion>
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <div class="cart__item card flex-space-around">
+          <input type="checkbox" name="cart" id="cart" />
+          <img src="background-img2.jpg" class="cart-item-img" alt="images2" />
+          <div class="cart__description">
+            <h3 class="product__name">ByCicyle</h3>
+            <h4 class="product__price">price:$125.87</h4>
+            <p class="cart-item-shipping">Shippinge cost</p>
+          </div>
+          <div class="cart-item-actions">
+            <buttion class="btn btn1">
+              <i class="fa-solid fa-trash"></i>
+            </buttion>
+            <buttion class="btn btn1">
+              <i class="fa-solid fa-plus"></i>
+            </buttion>
+            <span>5</span>
+            <buttion class="btn btn1">
+              <i class="fa-solid fa-minus"></i>
+            </buttion>
+          </div>
+        </div> -->
+        <div class="cart__payment">
+          <div class="cart-payment-summary card">
+            <h2>Payment Summary</h2>
+
+            <div>
+              <p>Subtotal :</p>
+              <p>$335.39</p>
+            </div>
+
+            <div>
+              <p>Shippinge Cost :</p>
+              <p>$435.39</p>
+            </div>
+
+            <div>
+              <p>Total Cost :</p>
+              <p>$350.39</p>
+            </div>
+            <button class="btn cart-payment-btn">Paid Now</button>
+          </div>
+          <div class="cart-payment-method card">
+            <h2>Payment Methods</h2>
+            <div>
+              <i class="fa-brands fa-cc-visa fa-3x"></i>
+              <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+              <i class="fa-brands fa-cc-amex fa-3x"></i>
+              <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+              <i class="fa-brands fa-cc-paypal fa-3x"></i>
+              <i class="fa-brands fa-google-pay fa-3x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer starts here  -->
+
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newletter:</label>
+      </div>
+
+      <input
+        type="email"
+        id="subscribe"
+        class="footer__input"
+        placeholder="Enter your email"
+        autocomplete="off"
+      />
+
+      <button class="btn btn__subscribe">Subscribe</button>
+
+      <div>
+        <p>&copy; Memonul Expres in 2024. All revarse</p>
+      </div>
+    </footer>
+
+    <!-- footer ends here  -->
+    <script src="./scripts.js/index.js"></script>
+  </body>
+</html>

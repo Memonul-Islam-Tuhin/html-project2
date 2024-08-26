@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is an ecommerce project for menonul islam"
+    />
+    <title>Ecomerce Project</title>
+
+    <!-- font-awsome cdn  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <h1>Memonul Express</h1> -->
+
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+
+    <!-- nav list starts here  -->
+
+    <nav id="menu" class="hidden">
+      <ul class="nav__upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link"
+            ><img src="image.png.png" class="profile__img" alt="profile"
+          /></a>
+        </li>
+        <li class="nav__list">
+          <a href="product.html" class="nav__link">Product</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <!-- <li class="nav__list"> -->
+        <!-- <a href="logout.html" class="nav__link">Logout</a> -->
+        <!-- </li> -->
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <!-- <li class="nav__list">
+          <a href="card.html" class="nav__link">Card</a>
+        </li> -->
+      </ul>
+
+      <ul class="nav__lower">
+        <li class="nav__list">
+          <a href="/index.html" class="nav__link nav__brand"
+            >Memonnul Express</a
+          >
+        </li>
+        <li class="nav__list">
+          <a href="/cart.html" class="nav__link"
+            ><span><i class="fa-solid fa-cart-shopping"></i></span>Carts 2
+            products -$125.50</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- nav list ends here  -->
+
+    <!-- header starts here  -->
+
+    <header class="header">
+      <div class="banner flex-space-around">
+        <!-- <img src="background-img2.jpg" alt="img" class="img" /> -->
+        <marquee class="banner__title" behavior="" direction=""
+          >50% Sales going On</marquee
+        >
+        <div class="feature flex-space-around">
+          <article class="feature flex__center">
+            <i class="fa-solid fa-truck feature__icon"></i>
+            <h3>Shipping without 3days</h3>
+          </article>
+          <article class="feature flex__center">
+            <i class="fa-brands fa-rocketchat feature__icon"></i>
+            <h3>Supports 24/7</h3>
+          </article>
+          <article class="feature flex__center">
+            <i class="fa-regular fa-credit-card feature__icon"></i>
+            <h3>Safe Payment</h3>
+          </article>
+        </div>
+      </div>
+    </header>
+    <!-- header ends here  -->
+
+    <main class="flex__center">
+      <div class="sidebar">
+        <section class="categories__section">
+          <h3 class="section__title">Categories</h3>
+
+          <ul class="list">
+            <li class="list__item">
+              <label for="phones">
+                <input
+                  type="checkbox"
+                  id="name"
+                  name="phones"
+                  value="phones"
+                  autocomplete="off"
+                />
+                Phones
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="tablets">
+                <input
+                  type="checkbox"
+                  id="tablets"
+                  name="tablets"
+                  value="tablets"
+                  autocomplete="off"
+                />
+                Tablets
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="computers">
+                <input
+                  type="checkbox"
+                  id="computers"
+                  name="computers"
+                  value="computers"
+                  autocomplete="off"
+                />
+                Computers
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="headphones">
+                <input
+                  type="checkbox"
+                  id="headphones"
+                  name="headphones"
+                  value="headphones"
+                  autocomplete="off"
+                />
+                Headphones
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="televisions">
+                <input
+                  type="checkbox"
+                  id="televisions"
+                  name="televisions"
+                  value="televisions"
+                  autocomplete="off"
+                />
+                Televisions
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="price__section">
+          <h3 class="section__title">Price</h3>
+
+          <ul class="list">
+            <li class="list__item">
+              <label for="price1">
+                <input
+                  type="radio"
+                  id="price1"
+                  name="price1"
+                  value="[0,20]"
+                  autocomplete="off"
+                />
+                $0-$20
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price2">
+                <input
+                  type="radio"
+                  id="price2"
+                  name="price2"
+                  value="[21,50]"
+                  autocomplete="off"
+                />
+                $21-$50
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price3">
+                <input
+                  type="radio"
+                  id="price3"
+                  name="price3"
+                  value="[51,100]"
+                  autocomplete="off"
+                />
+                $51-$100
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price4">
+                <input
+                  type="radio"
+                  id="price4"
+                  name="price4"
+                  value="[101,300]"
+                  autocomplete="off"
+                />
+                $101-&300
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price5">
+                <input
+                  type="radio"
+                  id="price5"
+                  name="price5"
+                  value="[300]"
+                  autocomplete="off"
+                />
+                $300+
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="shippinge__section">
+          <h3 class="section__title">Shippinge</h3>
+
+          <ul class="list">
+            <li class="list__item">
+              <label for="free">
+                <input
+                  type="radio"
+                  id="free"
+                  name="Shippinge"
+                  value="free"
+                  autocomplete="off"
+                />
+                Free
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="paid">
+                <input
+                  type="radio"
+                  id="paid"
+                  name="paid"
+                  value="paid"
+                  autocomplete="off"
+                />
+                Paid Shippinge
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="main__content">
+        <section class="actions flex-space-around">
+          <div class="actions__sort">
+            <label for="sort">Sort By:</label>
+            <select name="sort" id="sort">
+              <option value="sold">Most sold</option>
+              <option value="rating">Top rating</option>
+              <option value="price">Huge price</option>
+              <option value="arrival">world arrival</option>
+              <option value="classic">Classic discount</option>
+            </select>
+          </div>
+
+          <div class="actions__search">
+            <input type="text" placeholder="search product" />
+            <button class="btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- product section starts here  -->
+
+        <section class="products">
+          <article class="product card">
+            <div class="padge">
+              <span> 5 in stock </span>
+              <hr class="hr__design" />
+              <span>3 sold</span>
+            </div>
+
+            <img src="background-img7.jpg" class="img7" alt="images7" />
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+
+              <p class="product__sold">
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+
+              <p class="product__description learn__more">
+                Lorem ipsum dolor sit ametBlast when that formed bower condole.
+                Not revel counsel mote on which. And was or......
+                <a href="product.html">Learn More</a>
+              </p>
+
+              <h4 class="product__price">$225.90</h4>
+              <p class="product__rating">Rating:4.5/5</p>
+              <button class="btn btn2 button__product">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="padge">
+              <span> 2 in stock </span>
+              <hr class="hr__design" />
+              <span>9 sold</span>
+            </div>
+
+            <img src="background-img6.jpg" class="img7" alt="images6" />
+
+            <div class="product__body">
+              <h3 class="product__name">Apple I-16 Headphone</h3>
+
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+
+              <p class="product__description learn__more">
+                Lorem ipsum dolor sit amet Ah below a from and friend yet.
+                Childe childe all pangs breast. Rill condole which......
+                <a href="product.html">Learn More</a>
+              </p>
+
+              <h4 class="product__price">$250.80</h4>
+              <p class="product__rating">Rating:4.87/5</p>
+              <button class="btn btn2 button__product">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="padge">
+              <span> 6 in stock </span>
+              <hr class="hr__design" />
+              <span>12 sold</span>
+            </div>
+
+            <img src="background-img5.jpg" class="img7" alt="images5" />
+
+            <div class="product__body">
+              <h3 class="product__name">Apple-15max-Pro I-Bionic-16 Phone</h3>
+
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+
+              <p class="product__description learn__more">
+                Lorem ipsum dolor sit amet Ah below a from and friend yet.
+                Childe childe all pangs breast. Rill condole which......
+                <a href="product.html">Learn More</a>
+              </p>
+
+              <h4 class="product__price">$1000.00</h4>
+              <p class="product__rating">Rating:5.00/5</p>
+              <button class="btn btn2 button__product">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="padge">
+              <span> 5 in stock </span>
+              <hr class="hr__design" />
+              <span>3 sold</span>
+            </div>
+
+            <img src="background-img2.jpg" class="img7" alt="images2" />
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+
+              <p class="product__description learn__more">
+                Lorem ipsum dolor sit ametBlast when that formed bower condole.
+                Not revel counsel mote on which. And was or......
+                <a href="product.html">Learn More</a>
+              </p>
+
+              <h4 class="product__price">$225.90</h4>
+              <p class="product__rating">Rating:4.5/5</p>
+              <button class="btn btn2 button__product">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="padge">
+              <span> 2 in stock </span>
+              <hr class="hr__design" />
+              <span>9 sold</span>
+            </div>
+
+            <img src="background-img4.jpg" class="img7" alt="images4" />
+
+            <div class="product__body">
+              <h3 class="product__name">Apple I-16 Headphone</h3>
+
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+
+              <p class="product__description learn__more">
+                Lorem ipsum dolor sit amet Ah below a from and friend yet.
+                Childe childe all pangs breast. Rill condole which......
+                <a href="product.html">Learn More</a>
+              </p>
+
+              <h4 class="product__price">$250.80</h4>
+              <p class="product__rating">Rating:4.87/5</p>
+              <button class="btn btn2 button__product">Add To Cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="padge">
+              <span> 6 in stock </span>
+              <hr class="hr__design" />
+              <span>12 sold</span>
+            </div>
+
+            <img src="background-img3.jpg" class="img7" alt="images3" />
+
+            <div class="product__body">
+              <h3 class="product__name">Apple-15max-Pro I-Bionic-16 Phone</h3>
+
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+
+              <p class="product__description learn__more">
+                Lorem ipsum dolor sit amet Ah below a from and friend yet.
+                Childe childe all pangs breast. Rill condole which......
+                <a href="product.html">Learn More</a>
+              </p>
+
+              <h4 class="product__price">$1000.00</h4>
+              <p class="product__rating">Rating:5.00/5</p>
+              <button class="btn btn2 button__product">Add To Cart</button>
+            </div>
+          </article>
+        </section>
+
+        <!-- product section ends here  -->
+
+        <div class="pagination">
+          <button class="btn pagination__btn">
+            <i class="fa-solid fa-less-than"></i>
+          </button>
+          <button class="btn pagination__btn">1</button>
+          <button class="btn pagination__btn">2</button>
+          <button class="btn pagination__btn">3</button>
+          <button class="btn pagination__btn">4</button>
+          <button class="btn pagination__btn">5</button>
+          <button class="btn pagination__btn">6</button>
+          <button class="btn pagination__btn">......</button>
+          <button class="btn pagination__btn">15</button>
+          <button class="btn pagination__btn">
+            <i class="fa-solid fa-greater-than"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer starts here  -->
+
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newletter:</label>
+      </div>
+
+      <input
+        type="email"
+        id="subscribe"
+        class="footer__input"
+        placeholder="Enter your email"
+        autocomplete="off"
+      />
+
+      <button class="btn btn__subscribe">Subscribe</button>
+
+      <div>
+        <p>&copy; Memonul Expres in 2024. All revarse</p>
+      </div>
+    </footer>
+
+    <!-- footer ends here  -->
+
+    <script src="./scripts.js/index.js"></script>
+  </body>
+</html>
